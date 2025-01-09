@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "cruz.png",
       "idiom" : "universal"
     }
   ],

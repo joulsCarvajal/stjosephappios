@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B91339942D2F417C00666677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91339902D2F417C00666677 /* Assets.xcassets */; };
+		B91339952D2F417C00666677 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91339912D2F417C00666677 /* ContentView.swift */; };
+		B91339962D2F417C00666677 /* stjosephappiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91339922D2F417C00666677 /* stjosephappiosApp.swift */; };
+		B91339C12D2F5E3200666677 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91339C02D2F5E3200666677 /* SplashView.swift */; };
+		B91339C32D2F5E4B00666677 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91339C22D2F5E4B00666677 /* SplashViewModel.swift */; };
+		B91339C72D2F65D600666677 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91339C62D2F65D600666677 /* WelcomeView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B95DA8E72D28D567002B4274 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,12 +33,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B91339902D2F417C00666677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B91339912D2F417C00666677 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B91339922D2F417C00666677 /* stjosephappiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stjosephappiosApp.swift; sourceTree = "<group>"; };
+		B91339C02D2F5E3200666677 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		B91339C22D2F5E4B00666677 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		B91339C62D2F65D600666677 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		B95DA8D62D28D564002B4274 /* stjosephappios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stjosephappios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95DA8E62D28D567002B4274 /* stjosephappiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stjosephappiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95DA8F02D28D567002B4274 /* stjosephappiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stjosephappiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		B91339B32D2F5B7600666677 /* Preview Content */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		B95DA8D82D28D564002B4274 /* stjosephappios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = stjosephappios;
@@ -72,13 +92,148 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B91339AD2D2F5B0F00666677 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B91339922D2F417C00666677 /* stjosephappiosApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B91339AE2D2F5B1400666677 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B91339B82D2F5CAA00666677 /* Models */,
+				B91339B72D2F5CA000666677 /* Repositories */,
+				B91339B52D2F5C8600666677 /* DataSources */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B91339AF2D2F5B1B00666677 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B91339BB2D2F5CC800666677 /* UseCases */,
+				B91339BA2D2F5CC100666677 /* Repositories */,
+				B91339B92D2F5CB900666677 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B91339B12D2F5B2A00666677 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B91339BF2D2F5D0300666677 /* Components */,
+				B91339BD2D2F5CF800666677 /* Screens */,
+				B91339BC2D2F5CE200666677 /* Common */,
+				B91339912D2F417C00666677 /* ContentView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B91339B52D2F5C8600666677 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				B91339B62D2F5C9300666677 /* Local */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		B91339B62D2F5C9300666677 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		B91339B72D2F5CA000666677 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B91339B82D2F5CAA00666677 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B91339B92D2F5CB900666677 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B91339BA2D2F5CC100666677 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B91339BB2D2F5CC800666677 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		B91339BC2D2F5CE200666677 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B91339BD2D2F5CF800666677 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B91339C42D2F65BE00666677 /* Welcome */,
+				B91339BE2D2F5CFE00666677 /* Splash */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B91339BE2D2F5CFE00666677 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B91339C02D2F5E3200666677 /* SplashView.swift */,
+				B91339C22D2F5E4B00666677 /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		B91339BF2D2F5D0300666677 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B91339C42D2F65BE00666677 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B91339C62D2F65D600666677 /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		B95DA8CD2D28D564002B4274 = {
 			isa = PBXGroup;
 			children = (
+				B91339902D2F417C00666677 /* Assets.xcassets */,
+				B91339AD2D2F5B0F00666677 /* App */,
+				B91339AE2D2F5B1400666677 /* Data */,
+				B91339AF2D2F5B1B00666677 /* Domain */,
+				B91339B12D2F5B2A00666677 /* Presentation */,
+				B91339B32D2F5B7600666677 /* Preview Content */,
+				B95DA8D72D28D564002B4274 /* Products */,
 				B95DA8D82D28D564002B4274 /* stjosephappios */,
 				B95DA8E92D28D567002B4274 /* stjosephappiosTests */,
 				B95DA8F32D28D567002B4274 /* stjosephappiosUITests */,
-				B95DA8D72D28D564002B4274 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +263,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				B91339B32D2F5B7600666677 /* Preview Content */,
 				B95DA8D82D28D564002B4274 /* stjosephappios */,
 			);
 			name = stjosephappios;
@@ -212,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91339942D2F417C00666677 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +393,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91339C72D2F65D600666677 /* WelcomeView.swift in Sources */,
+				B91339952D2F417C00666677 /* ContentView.swift in Sources */,
+				B91339962D2F417C00666677 /* stjosephappiosApp.swift in Sources */,
+				B91339C12D2F5E3200666677 /* SplashView.swift in Sources */,
+				B91339C32D2F5E4B00666677 /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +557,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"stjosephappios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 385LUL4MHH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +586,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"stjosephappios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 385LUL4MHH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
